@@ -11,8 +11,12 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
+  target: 'static',
+
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '~/assets/css/main.scss'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -32,6 +36,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // https://go.nuxtjs.dev/bootstrap
+    'bootstrap-vue/nuxt'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -54,6 +60,12 @@ export default {
       description: 'Share anime and manga experiences, get recommendations and see what friends are watching or reading.',
       theme_color: '#332532'
     }
+  },
+
+  // Bootstrap Vue configuration: https://go.nuxtjs.dev/bootstrap
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
