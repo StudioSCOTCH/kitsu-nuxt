@@ -1,4 +1,4 @@
-# Kitsu
+# Kitsu (Nuxt Edition)
 
 A rewrite of Kitsu's client with Nuxt.js.
 
@@ -6,6 +6,12 @@ A rewrite of Kitsu's client with Nuxt.js.
 
 - Node.js 14.x
 - Yarn 1.x
+
+## Disclaimer
+
+This project is not in any way affiliated with Kitsu. I
+have checked with them, and they have given me their
+blessing to work on this.
 
 ## License
 
