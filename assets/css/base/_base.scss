@@ -1,0 +1,22 @@
+body {
+  background-color: $background-color;
+  overflow-y: scroll;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.dark {
+  body {
+    background-color: $dark-background-color;
+  }
+
+  input,
+  textarea,
+  .form-control {
+    background-color: $dark-input-background-color;
+    border: darken($dark-background-color, 1);
+    color: $dark-body-text-color;
+  }
+}

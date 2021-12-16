@@ -1,0 +1,53 @@
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Asap', sans-serif;
+$heading-font-weight: 700;
+
+body {
+  color: $body-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+}
+
+p {
+  font-family: $base-font-family;
+}
+
+a {
+  color: $body-link-color;
+  font-family: $heading-font-family;
+  text-decoration: none;
+
+  &:hover,
+  &:visited:hover {
+    color: darken($body-link-color, 10);
+  }
+}
+
+.dark {
+  body {
+    color: $dark-body-text-color;
+  }
+
+  a {
+    color: $dark-body-link-color;
+
+    &:hover,
+    &:visited:hover {
+      color: darken($dark-body-link-color, 10);
+    }
+  }
+}

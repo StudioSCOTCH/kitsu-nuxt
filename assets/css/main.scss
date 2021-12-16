@@ -1,5 +1,16 @@
 // The main stylesheet
 
-// Import Bootstrap
-@import 'bootstrap/scss/bootstrap.scss';
-@import 'bootstrap-vue/src/index.scss';
+// Import variables
+@import 'base/variables';
+
+// Import external libraries
+@import 'bootstrap/scss/bootstrap';
+@import 'vendor/noui';
+@import 'vendor/hint';
+// @import 'vendor/notify';
+@import 'shared';
+
+// Import base styles
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animate';
